@@ -1,0 +1,530 @@
+
+/* =========================
+   基本設定
+========================= */
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, "Microsoft JhengHei", sans-serif;
+    color: #1e293b;
+    background: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   導覽列
+========================= */
+
+.navbar {
+    background: rgba(15, 23, 42, 0.96);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    margin-left: 14px;
+    color: #ffffff !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #93c5fd !important;
+}
+
+
+/* =========================
+   首頁
+========================= */
+
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a);
+    color: white;
+    overflow: hidden;
+}
+
+.hero-content {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.subtitle {
+    letter-spacing: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #93c5fd;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: clamp(46px, 6vw, 72px);
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+
+.hero h1 span {
+    color: #60a5fa;
+}
+
+.hero h2 {
+    font-size: clamp(20px, 3vw, 27px);
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.hero-text {
+    max-width: 590px;
+    font-size: 17px;
+    line-height: 1.9;
+    color: #dbeafe;
+}
+
+.hero-image {
+    text-align: center;
+    padding: 100px 25px 30px;
+}
+
+.profile-photo {
+    display: block;
+    width: 100%;
+    max-width: 370px;
+    height: 460px;
+    margin: 0 auto;
+    object-fit: cover;
+    object-position: center 65%;
+    border-radius: 180px 180px 24px 24px;
+    border: 4px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: translateY(-6px);
+}
+
+.photo-caption {
+    margin-top: 20px;
+    color: #dbeafe;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   按鈕
+========================= */
+
+.btn-main {
+    margin-top: 20px;
+    margin-right: 8px;
+    padding: 12px 26px;
+    border-radius: 30px;
+    background: #3b82f6;
+    color: white;
+    border: 1px solid #3b82f6;
+    transition: all 0.3s ease;
+}
+
+.btn-main:hover {
+    background: #2563eb;
+    border-color: #2563eb;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.btn-outline-light {
+    margin-top: 20px;
+    padding: 12px 26px;
+    border-radius: 30px;
+}
+
+
+/* =========================
+   通用區塊
+========================= */
+
+.section {
+    padding: 100px 0;
+}
+
+.section-light {
+    background: #f8fafc;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title > p {
+    color: #3b82f6;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.section-title h2 {
+    font-size: clamp(32px, 4vw, 42px);
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 12px;
+}
+
+.section-title > span {
+    color: #64748b;
+    font-size: 15px;
+}
+
+
+/* =========================
+   關於我
+========================= */
+
+.about-card {
+    padding: 50px 30px;
+    text-align: center;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 24px;
+}
+
+.about-icon {
+    font-size: 75px;
+    margin-bottom: 20px;
+}
+
+.about-card h3 {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.about-card p {
+    color: #64748b;
+}
+
+.about-tag {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 14px;
+    background: #dbeafe;
+    color: #1d4ed8;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.about-heading {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 22px;
+}
+
+.body-text {
+    color: #64748b;
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+.info-list {
+    margin-top: 30px;
+}
+
+.info-list div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 14px;
+}
+
+.info-list strong {
+    width: 85px;
+    color: #0f172a;
+}
+
+.info-list span {
+    color: #64748b;
+}
+
+
+/* =========================
+   專業技能
+========================= */
+
+.skill-card {
+    height: 100%;
+    padding: 35px 24px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+}
+
+.skill-icon {
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+
+.skill-card h3 {
+    font-size: 21px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.skill-card p {
+    color: #64748b;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   Microsoft 證照
+========================= */
+
+.cert-card {
+    height: 100%;
+    padding: 32px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 22px;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.04);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cert-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(15, 23, 42, 0.10);
+}
+
+.cert-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.cert-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    background: #eff6ff;
+    border-radius: 16px;
+}
+
+.cert-brand {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #2563eb;
+}
+
+.cert-code {
+    color: #2563eb;
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.cert-card h3 {
+    color: #0f172a;
+    font-size: 23px;
+    font-weight: 800;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+.cert-description {
+    color: #64748b;
+    line-height: 1.9;
+    min-height: 110px;
+}
+
+.cert-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 22px;
+}
+
+.cert-tags span {
+    padding: 7px 12px;
+    background: #eff6ff;
+    color: #1d4ed8;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.cert-status {
+    margin-top: 22px;
+    padding-top: 15px;
+    border-top: 1px solid #e2e8f0;
+    color: #64748b;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   我的興趣
+========================= */
+
+.interest-card {
+    height: 100%;
+    padding: 35px 22px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.interest-card:hover {
+    transform: translateY(-7px);
+    background: #eff6ff;
+}
+
+.interest-icon {
+    font-size: 48px;
+    margin-bottom: 18px;
+}
+
+.interest-card h3 {
+    font-size: 19px;
+    font-weight: 800;
+    margin-bottom: 14px;
+}
+
+.interest-card p {
+    color: #64748b;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   聯絡我
+========================= */
+
+.contact-section {
+    background: #0f172a;
+    color: white;
+}
+
+.contact-section .section-title h2 {
+    color: white;
+}
+
+.contact-section .section-title > p {
+    color: #60a5fa;
+}
+
+.contact-text {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #cbd5e1;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+
+/* =========================
+   頁尾
+========================= */
+
+footer {
+    text-align: center;
+    padding: 25px 15px;
+    background: #020617;
+    color: #94a3b8;
+}
+
+footer p {
+    margin: 0;
+    font-size: 13px;
+}
+
+
+/* =========================
+   手機與平板
+========================= */
+
+@media (max-width: 991px) {
+    .hero {
+        padding: 90px 0 50px;
+    }
+
+    .hero-content {
+        padding-top: 45px;
+    }
+
+    .hero-image {
+        padding: 25px 15px;
+    }
+
+    .profile-photo {
+        max-width: 300px;
+        height: 370px;
+    }
+
+    .section {
+        padding: 75px 0;
+    }
+
+    .cert-description {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .hero-text {
+        font-size: 15px;
+    }
+
+    .section {
+        padding: 65px 0;
+    }
+
+    .section-title {
+        margin-bottom: 40px;
+    }
+
+    .cert-card {
+        padding: 25px;
+    }
+
+    .cert-card h3 {
+        font-size: 21px;
+    }
+
+    .info-list div {
+        gap: 8px;
+    }
+}
